@@ -1461,8 +1461,22 @@ button {
 }
 
 @media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  /* Global fixes */
+  input, textarea, select {
+    font-size: 16px !important;
+  }
+
+  button, .btn-primary, .btn-dark {
+    min-height: 44px;
+  }
+
+  /* Navigation */
   .nav-inner {
-    padding: 18px 24px;
+    padding: 18px 20px;
   }
 
   .nav-links {
@@ -1473,47 +1487,492 @@ button {
     display: inline-flex;
   }
 
-  .section-block,
-  .section-compact,
-  .content-section {
-    padding-left: 20px;
-    padding-right: 20px;
+  /* Hero grid */
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 0 20px;
   }
 
+  .hero-image img {
+    max-width: 350px;
+  }
+
+  .title {
+    font-size: clamp(2.4rem, 5vw, 3.2rem);
+  }
+
+  /* Sections padding */
+  .content-section,
+  .section-block,
+  .section-compact,
+  .get-in-touch {
+    padding: 80px 20px;
+  }
+
+  .section-head {
+    margin-bottom: 48px;
+  }
+
+  .section-head h2 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+  }
+
+  /* Service blocks */
+  .service-block,
+  .service-block--reverse {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .service-media .photo-placeholder {
+    min-height: 300px;
+  }
+
+  /* Grid layouts */
   .about-grid,
   .service-grid,
   .pricing-grid,
+  .offer-grid,
   .contact-grid {
     grid-template-columns: 1fr;
   }
 
-  .form-grid {
-    grid-template-columns: 1fr;
+  .client-box-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 
-  .hero-grid {
+  /* Photographer grid */
+  .photographer-grid {
+    grid-template-columns: 1fr;
     gap: 40px;
   }
 
+  .photographer-media .photo-placeholder {
+    min-height: 400px;
+  }
+
+  /* Portfolio */
+  .portfolio-grid {
+    columns: 2 280px;
+    gap: 12px;
+  }
+
+  /* Pricing */
+  .pricing-tabs {
+    gap: 6px;
+  }
+
+  .pricing-card {
+    padding: 36px 24px;
+  }
+
+  /* Form */
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    font-size: 16px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 60px 20px 32px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .footer-grid > div:nth-child(n+3) {
+    grid-column: auto;
+  }
+
+  /* Footer social links display */
+  .footer-grid > div:last-child > div > a {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  /* Marquee */
+  .marquee-strip {
+    padding: 20px;
+  }
+
+  /* Container */
+  .container {
+    width: calc(100% - 40px);
+  }
+
+  /* Text improvements */
+  p, .lead {
+    line-height: 1.65;
+  }
 }
 
 @media (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+
+  /* Form inputs minimum 16px font for iOS zoom fix */
+  input, textarea, select {
+    font-size: 16px !important;
+    min-height: 44px;
+  }
+
+  /* Global padding on sections */
+  .content-section,
+  .section-block,
+  .section-compact,
+  .services-list,
+  .get-in-touch,
+  .contact-section,
+  .about-grid {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Buttons minimum height for tapping */
+  button, .btn-primary, .btn-dark, .filter-button, .tab-button {
+    min-height: 44px;
+  }
+
+  /* Hero section mobile */
   .hero-image img {
     max-width: 280px;
   }
 
   .hero-grid {
-    padding: 0 20px;
+    padding: 0 16px;
     gap: 24px;
+    grid-template-columns: 1fr;
   }
 
   .title,
   .subtitle {
     font-size: clamp(2.2rem, 6vw, 3.2rem);
   }
-}
 
+  .hero-scroll-hint {
+    display: none;
+  }
+
+  .hero-actions,
+  .hero-actions--wrap {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn-primary,
+  .hero-actions .btn-dark,
+  .hero-actions--wrap .btn-primary,
+  .hero-actions--wrap .btn-dark {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Navigation mobile improvements */
+  .mobile-menu {
+    max-height: 500px;
+  }
+
+  .mobile-menu nav {
+    padding: 16px 20px;
+    gap: 0;
+  }
+
+  .mobile-menu a {
+    padding: 14px 0;
+    display: block;
+    border-bottom: 1px solid rgba(58, 61, 42, 0.1);
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-menu a:last-child {
+    border-bottom: none;
+  }
+
+  .nav-header.scrolled .mobile-menu a {
+    color: var(--olive-deep);
+  }
+
+  /* Logo scaling on mobile */
+  #logoImage {
+    max-height: 40px;
+  }
+
+  /* Portfolio grid single column */
   .portfolio-grid {
     columns: 1 100%;
+  }
+
+  /* Photographer section stack */
+  .photographer-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .photographer-media .photo-placeholder {
+    min-height: 340px;
+  }
+
+  /* Service grid */
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-block,
+  .service-block--reverse {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+
+  .service-media .photo-placeholder {
+    min-height: 280px;
+  }
+
+  .service-copy a.btn-dark {
+    width: 100%;
+  }
+
+  /* Offer cards single column */
+  .offer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .offer-card--videography {
+    grid-column: auto;
+    justify-self: stretch;
+  }
+
+  /* Pricing cards single column */
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pricing-tabs .tab-button {
+    padding: 10px 16px;
+    font-size: 0.7rem;
+  }
+
+  .pricing-card {
+    padding: 32px 20px;
+  }
+
+  .pricing-card .popular-badge {
+    top: 12px;
+    right: 12px;
+    font-size: 0.55rem;
+  }
+
+  /* Testimonials mobile - single column */
+  .client-box-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .client-box {
+    min-height: auto;
+    padding: 32px 20px;
+  }
+
+  /* Contact grid single column */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-panel {
+    gap: 24px;
+  }
+
+  /* Contact info cards */
+  .contact-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Form grid single column */
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    font-size: 16px;
+    min-height: 44px;
+  }
+
+  .form-field textarea {
+    min-height: 120px;
+  }
+
+  /* About grid */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-media {
+    order: -1;
+  }
+
+  /* Marquee strip */
+  .marquee-strip {
+    padding: 20px 16px;
+    gap: 20px;
+  }
+
+  .marquee-item {
+    font-size: 0.6rem;
+    gap: 12px;
+  }
+
+  /* Text improvements for readability */
+  p, .lead, body {
+    line-height: 1.7;
+  }
+
+  /* Footer improvements */
+  .footer {
+    padding: 60px 16px 32px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-title {
+    margin-bottom: 16px;
+  }
+
+  .footer-nav a,
+  .footer-contact a,
+  .footer a {
+    display: block;
+    padding: 8px 0;
+  }
+
+  /* Footer social media row */
+  .footer-grid > div:last-child > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .footer-grid > div:last-child a {
+    display: inline-block;
+  }
+
+  /* Card shadows on mobile */
+  .offer-card,
+  .pricing-card,
+  .portfolio-card {
+    box-shadow: 0 6px 16px rgba(58, 61, 42, 0.12);
+  }
+
+  /* Break long words */
+  p, li, a, span, div {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  /* Responsive images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Slideshow elements mobile */
+  .slideshow-dot-row,
+  .slide-caption {
+    left: 16px;
+  }
+
+  .slide-dot {
+    height: 1px;
+  }
+
+  .slide-dot.active {
+    width: 20px;
+  }
+
+  .slide-dot:not(.active) {
+    width: 6px;
+  }
+
+  /* Animations slightly reduced for mobile */
+  .reveal {
+    transition-duration: 0.6s !important;
+  }
+
+  .reveal-left,
+  .reveal-right {
+    transition-duration: 0.6s !important;
+  }
+
+  /* Section heads mobile */
+  .section-head {
+    margin-bottom: 40px;
+  }
+
+  .section-head h2 {
+    font-size: clamp(1.8rem, 5vw, 2.4rem);
+  }
+
+  .section-head.center {
+    text-align: center;
+  }
+
+  /* Dividers */
+  .divider,
+  .service-divider {
+    margin-bottom: 16px;
+  }
+
+  /* Container adjustments */
+  .container {
+    width: calc(100% - 32px);
+  }
+
+  /* Hero section tablet fix */
+  .hero-section,
+  .hero-hero {
+    min-height: 500px;
+  }
+
+  .hero-compact {
+    min-height: 300px;
+  }
+
+  /* Booking iframe mobile */
+  .booking-iframe {
+    width: 100% !important;
+    min-height: 600px;
+  }
+
+  /* No horizontal scroll */
+  body, html {
+    overflow-x: hidden;
   }
 }

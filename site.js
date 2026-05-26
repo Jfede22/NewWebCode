@@ -58,16 +58,25 @@ document.addEventListener('DOMContentLoaded', function () {
   if (mobileMenu && menuToggle && burgerTop && burgerMiddle && burgerBottom) {
     menuToggle.addEventListener('click', function () {
       const open = mobileMenu.classList.toggle('open');
-      burgerTop.style.transform = open ? 'rotate(45deg) translate(4px, 4px)' : 'none';
+      burgerTop.style.transform = open ? 'rotate(45deg) translate(5px, 5px)' : 'rotate(0deg) translate(0, 0)';
       burgerMiddle.style.opacity = open ? '0' : '1';
-      burgerBottom.style.transform = open ? 'rotate(-45deg) translate(4px, -4px)' : 'none';
+      burgerMiddle.style.transform = open ? 'translateX(-10px)' : 'translateX(0)';
+      burgerBottom.style.transform = open ? 'rotate(-45deg) translate(6px, -6px)' : 'rotate(0deg) translate(0, 0)';
     });
     mobileMenu.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', function () {
+      link.addEventListener('click', function (e) {
         mobileMenu.classList.remove('open');
-        burgerTop.style.transform = 'none';
+        burgerTop.style.transform = 'rotate(0deg) translate(0, 0)';
         burgerMiddle.style.opacity = '1';
-        burgerBottom.style.transform = 'none';
+        burgerMiddle.style.transform = 'translateX(0)';
+        burgerBottom.style.transform = 'rotate(0deg) translate(0, 0)';
+        e.preventDefault();
+        const href = link.getAttribute('href');
+        if (href) {
+          setTimeout(() => {
+            window.location.href = href;
+          }, 200);
+        }
       });
     });
   }
