@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pricing | Via Federico's Photography</title>
+    <meta
+      name="description"
+      content="Transparent photography pricing packages for portraits, weddings, and commercial work from Via Federico's Photography."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="site.css" />
+  </head>
+  <body>
+    <header class="nav-header" id="siteHeader">
+      <div class="nav-inner container">
+        <a href="index.html" style="display:flex;align-items:center;gap:12px;text-decoration:none;">
+          <img id="logoImage" src="logo.png" alt="Via Federico's Photography" style="height:52px;width:auto;filter:brightness(0) invert(1);transition:height 0.4s ease,filter 0.4s ease;" />
+        </a>
+        <nav class="nav-links">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+          <a class="nav-link nav-book" href="booking.html">Book</a>
+          <a class="nav-link" href="pricing.html">Pricing</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+        <button class="mobile-menu-btn" id="menuToggle" aria-label="Toggle menu">
+          <span id="burgerTop"></span>
+          <span id="burgerMiddle"></span>
+          <span id="burgerBottom"></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="booking.html">Book</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main style="padding-top:100px;">
+      <section class="hero-compact">
+        <div class="hero-backdrop"></div>
+        <div class="hero-grid" style="grid-template-columns:1fr;justify-items:center;">
+          <div class="hero-copy" style="text-align:center;grid-column:1;width:100%;max-width:800px;">
+            <p class="hero-subtitle">Investment</p>
+            <h1 class="title">Pricing</h1>
+            <p class="lead" style="max-width:480px;margin:20px auto 0;">Transparent pricing with no hidden fees. All packages include a print release and online gallery.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-compact" style="background:var(--warm-white);border-bottom:1px solid var(--olive-mist);">
+        <div class="container pricing-tabs">
+          <button class="tab-button active" data-tab="portraits">Portraits & Personal</button>
+          <button class="tab-button" data-tab="weddings">Weddings & Events</button>
+          <button class="tab-button" data-tab="commercial">Commercial</button>
+        </div>
+      </section>
+
+      <section class="content-section" style="background:var(--warm-white);padding-bottom:120px;">
+        <div class="container">
+          <div class="pricing-panel active" data-tab="portraits">
+            <div class="section-head center reveal" style="margin-bottom:64px;">
+              <h2>Portraits & Personal</h2>
+              <p class="lead" style="text-align:center;margin:0 auto;">Solo sessions, couples, engagements, families, graduations, and headshots.</p>
+            </div>
+            <div class="pricing-grid">
+              <div class="pricing-card reveal">
+                <p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.62rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-mid);margin-bottom:12px;">30 minutes</p>
+                <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.9rem;color:var(--olive-deep);margin-bottom:8px;">Mini Session</h3>
+                <p style="font-family:'Cormorant Garamond',serif;font-size:2.8rem;color:var(--olive-mid);margin-bottom:32px;">$60</p>
+                <ul style="font-family:'Jost',sans-serif;">
+                  <li>- 30 minute session</li>
+                  <li>- 1 location</li>
+                  <li>- 10 edited digital images</li>
+                  <li>- Online gallery delivery</li>
+                  <li>- Within 40 miles of Yuma</li>
+                </ul>
+                <a class="btn-dark" href="contact.html">Book This Package</a>
+              </div>
+              <div class="pricing-card popular reveal">
+                <div class="popular-badge">Most Popular</div>
+                <p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.62rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-pale);margin-bottom:12px;">1 hour</p>
+                <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.9rem;color:var(--cream);margin-bottom:8px;">Standard Session</h3>
+                <p style="font-family:'Cormorant Garamond',serif;font-size:2.8rem;color:var(--olive-mist);margin-bottom:32px;">$120</p>
+                <ul style="font-family:'Jost',sans-serif;">
+                  <li>- 1 hour session</li>
+                  <li>- Up to 2 locations</li>
+                  <li>- 25 edited digital images</li>
+                  <li>- Online gallery delivery</li>
+                  <li>- 1 outfit change</li>
+                  <li>- Within 40 miles of Yuma</li>
+                </ul>
+                <a class="btn-dark" href="contact.html">Book This Package</a>
+              </div>
+              <div class="pricing-card reveal">
+                <p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.62rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-mid);margin-bottom:12px;">2 hours</p>
+                <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.9rem;color:var(--olive-deep);margin-bottom:8px;">Extended Session</h3>
+                <p style="font-family:'Cormorant Garamond',serif;font-size:2.8rem;color:var(--olive-mid);margin-bottom:32px;">$200</p>
+                <ul style="font-family:'Jost',sans-serif;">
+                  <li>- 2 hour session</li>
+                  <li>- Up to 3 locations</li>
+                  <li>- 40+ edited digital images</li>
+                  <li>- Online gallery delivery</li>
+                  <li>- 2 outfit changes</li>
+                  <li>- Within 40 miles of Yuma</li>
+                </ul>
+                <a class="btn-dark" href="contact.html">Book This Package</a>
+              </div>
+            </div>
+
+            <div style="margin-top:48px;">
+              <div class="section-head center reveal" style="margin-bottom:20px;text-align:center;"><h3 style="font-family:'Cormorant Garamond',serif;color:var(--olive-deep);">Specialty Sessions</h3></div>
+              <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;">
+                <div class="pricing-card reveal">
+                  <h4 style="font-family:'Cormorant Garamond',serif;margin-bottom:8px;text-align:center;">Couples Session — $130</h4>
+                  <p style="font-family:'Jost',sans-serif;margin-bottom:8px;text-align:center;">1 hr, 2 locations, 25 edited images, online gallery</p>
+                  <a class="btn-dark" href="https://app.acuityscheduling.com/schedule.php?owner=39412170" target="_blank" style="display:block;margin-top:12px;">Book This Session</a>
+                </div>
+                <div class="pricing-card reveal">
+                  <h4 style="font-family:'Cormorant Garamond',serif;margin-bottom:8px;text-align:center;">Family Session — $150</h4>
+                  <p style="font-family:'Jost',sans-serif;margin-bottom:8px;text-align:center;">1 hr, 1-2 locations, 30 edited images, online gallery</p>
+                  <a class="btn-dark" href="https://app.acuityscheduling.com/schedule.php?owner=39412170" target="_blank" style="display:block;margin-top:12px;">Book This Session</a>
+                </div>
+                <div class="pricing-card reveal">
+                  <h4 style="font-family:'Cormorant Garamond',serif;margin-bottom:8px;text-align:center;">Headshots — $80</h4>
+                  <p style="font-family:'Jost',sans-serif;margin-bottom:8px;text-align:center;">45 min, studio or outdoor, 15 edited images, quick turnaround</p>
+                  <a class="btn-dark" href="https://app.acuityscheduling.com/schedule.php?owner=39412170" target="_blank" style="display:block;margin-top:12px;">Book This Session</a>
+                </div>
+                <div class="pricing-card reveal">
+                  <h4 style="font-family:'Cormorant Garamond',serif;margin-bottom:8px;text-align:center;">Senior Portraits — $150</h4>
+                  <p style="font-family:'Jost',sans-serif;margin-bottom:8px;text-align:center;">1.5 hr, multiple looks, 30 edited images, online gallery</p>
+                  <a class="btn-dark" href="https://app.acuityscheduling.com/schedule.php?owner=39412170" target="_blank" style="display:block;margin-top:12px;">Book This Session</a>
+                </div>
+                <div class="pricing-card reveal">
+                  <h4 style="font-family:'Cormorant Garamond',serif;margin-bottom:8px;text-align:center;">Engagement Session — $175</h4>
+                  <p style="font-family:'Jost',sans-serif;margin-bottom:8px;text-align:center;">1 hr, 2 locations, 25 edited images, online gallery</p>
+                  <a class="btn-dark" href="https://app.acuityscheduling.com/schedule.php?owner=39412170" target="_blank" style="display:block;margin-top:12px;">Book This Session</a>
+                </div>
+                <div class="pricing-card reveal">
+                  <h4 style="font-family:'Cormorant Garamond',serif;margin-bottom:8px;text-align:center;">Graduation Session — $100</h4>
+                  <p style="font-family:'Jost',sans-serif;margin-bottom:8px;text-align:center;">1 hr, cap and gown plus casual, 25 edited images</p>
+                  <a class="btn-dark" href="https://app.acuityscheduling.com/schedule.php?owner=39412170" target="_blank" style="display:block;margin-top:12px;">Book This Session</a>
+                </div>
+                <div class="pricing-card reveal" style="grid-column:1/-1;justify-self:center;max-width:calc(50% - 10px);">
+                  <h4 style="font-family:'Cormorant Garamond',serif;margin-bottom:8px;text-align:center;">Maternity Session — $130</h4>
+                  <p style="font-family:'Jost',sans-serif;margin-bottom:8px;text-align:center;">1 hr, golden hour preferred, 25 edited images</p>
+                  <a class="btn-dark" href="https://app.acuityscheduling.com/schedule.php?owner=39412170" target="_blank" style="display:block;margin-top:12px;">Book This Session</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pricing-panel" data-tab="weddings">
+            <div class="section-head center reveal" style="margin-bottom:64px;">
+              <h2>Weddings & Events</h2>
+              <p class="lead" style="text-align:center;margin:0 auto;">Comprehensive coverage for your ceremony, reception, and special events.</p>
+            </div>
+            <div class="pricing-grid">
+              <div class="pricing-card reveal">
+                <p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.62rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-mid);margin-bottom:12px;">Up to 2 hours</p>
+                <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.9rem;color:var(--olive-deep);margin-bottom:8px;">Event Coverage</h3>
+                <p style="font-family:'Cormorant Garamond',serif;font-size:2.8rem;color:var(--olive-mid);margin-bottom:32px;">$200</p>
+                <ul style="font-family:'Jost',sans-serif;">
+                  <li>- Up to 2 hours coverage</li>
+                  <li>- 50+ edited images</li>
+                  <li>- Online gallery delivery</li>
+                  <li>- Within 40 miles</li>
+                </ul>
+                <a class="btn-dark" href="https://app.acuityscheduling.com/schedule.php?owner=39412170" target="_blank">Book This Package</a>
+              </div>
+              <div class="pricing-card popular reveal">
+                <div class="popular-badge">Best Value</div>
+                <p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.62rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-pale);margin-bottom:12px;">4 hours</p>
+                <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.9rem;color:var(--cream);margin-bottom:8px;">Wedding Essential</h3>
+                <p style="font-family:'Cormorant Garamond',serif;font-size:2.8rem;color:var(--olive-mist);margin-bottom:32px;">$600</p>
+                <ul style="font-family:'Jost',sans-serif;">
+                  <li>- 4 hours coverage</li>
+                  <li>- Ceremony plus portraits</li>
+                  <li>- 100+ edited images</li>
+                  <li>- Online gallery delivery</li>
+                  <li>- Within 40 miles</li>
+                </ul>
+                <a class="btn-dark" href="https://app.acuityscheduling.com/schedule.php?owner=39412170" target="_blank">Book This Package</a>
+              </div>
+              <div class="pricing-card reveal">
+                <p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.62rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-mid);margin-bottom:12px;">6–8 hours</p>
+                <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.9rem;color:var(--olive-deep);margin-bottom:8px;">Wedding Full Day</h3>
+                <p style="font-family:'Cormorant Garamond',serif;font-size:2.8rem;color:var(--olive-mid);margin-bottom:32px;">$900</p>
+                <ul style="font-family:'Jost',sans-serif;">
+                  <li>- 6 to 8 hours coverage</li>
+                  <li>- Getting ready through reception</li>
+                  <li>- 200+ edited images</li>
+                  <li>- Online gallery delivery</li>
+                  <li>- Within 40 miles</li>
+                </ul>
+                <a class="btn-dark" href="https://app.acuityscheduling.com/schedule.php?owner=39412170" target="_blank">Book This Package</a>
+              </div>
+            </div>
+
+            <div style="margin-top:40px;">
+              <div class="section-head reveal" style="margin-bottom:20px;"><h3 style="font-family:'Cormorant Garamond',serif;color:var(--olive-deep);">Videography Add-Ons</h3></div>
+              <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+                <div class="pricing-card reveal">
+                  <h4 style="font-family:'Cormorant Garamond',serif;margin-bottom:8px;text-align:center;">Short Reel / Social Video — $75</h4>
+                  <p style="font-family:'Jost',sans-serif;margin-bottom:8px;text-align:center;">60 to 90 second edited highlight reel for social media</p>
+                  <a class="btn-dark" href="https://app.acuityscheduling.com/schedule.php?owner=39412170" target="_blank" style="display:block;margin-top:12px;">Book This Add-On</a>
+                </div>
+                <div class="pricing-card reveal">
+                  <h4 style="font-family:'Cormorant Garamond',serif;margin-bottom:8px;text-align:center;">Session Video Add-On — $100</h4>
+                  <p style="font-family:'Jost',sans-serif;margin-bottom:8px;text-align:center;">Add video to any photo session, 2 to 3 minute edited video</p>
+                  <a class="btn-dark" href="https://app.acuityscheduling.com/schedule.php?owner=39412170" target="_blank" style="display:block;margin-top:12px;">Book This Add-On</a>
+                </div>
+                <div class="pricing-card reveal">
+                  <h4 style="font-family:'Cormorant Garamond',serif;margin-bottom:8px;text-align:center;">Event Highlight Film — $200</h4>
+                  <p style="font-family:'Jost',sans-serif;margin-bottom:8px;text-align:center;">3 to 5 minute cinematic highlight video of your event or wedding</p>
+                  <a class="btn-dark" href="https://app.acuityscheduling.com/schedule.php?owner=39412170" target="_blank" style="display:block;margin-top:12px;">Book This Add-On</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pricing-panel" data-tab="commercial">
+            <div class="section-head center reveal" style="margin-bottom:64px;">
+              <h2>Commercial & Product</h2>
+              <p class="lead" style="text-align:center;margin:0 auto;">Professional product and brand photography for your business.</p>
+            </div>
+            <div class="pricing-grid">
+              <div class="pricing-card reveal">
+                <p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.62rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-mid);margin-bottom:12px;">1 hour</p>
+                <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.9rem;color:var(--olive-deep);margin-bottom:8px;">Starter</h3>
+                <p style="font-family:'Cormorant Garamond',serif;font-size:2.8rem;color:var(--olive-mid);margin-bottom:32px;">$300</p>
+                <ul style="font-family:'Jost',sans-serif;">
+                  <li>- Up to 10 products</li>
+                  <li>- 20+ edited images</li>
+                </ul>
+                <a class="btn-dark" href="https://app.acuityscheduling.com/schedule.php?owner=39412170" target="_blank">Book This Package</a>
+              </div>
+              <div class="pricing-card popular reveal">
+                <div class="popular-badge">Most Popular</div>
+                <p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.62rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-pale);margin-bottom:12px;">2 hours</p>
+                <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.9rem;color:var(--cream);margin-bottom:8px;">Business</h3>
+                <p style="font-family:'Cormorant Garamond',serif;font-size:2.8rem;color:var(--olive-mist);margin-bottom:32px;">$500</p>
+                <ul style="font-family:'Jost',sans-serif;">
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--olive-pale)" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>50+ edited images</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--olive-pale)" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>Lifestyle shots included</li>
+                </ul>
+                <a class="btn-dark" href="https://app.acuityscheduling.com/schedule.php?owner=39412170" target="_blank">Book This Package</a>
+              </div>
+              <div class="pricing-card reveal">
+                <p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.62rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-mid);margin-bottom:12px;">4 hours</p>
+                <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.9rem;color:var(--olive-deep);margin-bottom:8px;">Enterprise</h3>
+                <p style="font-family:'Cormorant Garamond',serif;font-size:2.8rem;color:var(--olive-mid);margin-bottom:32px;">$900</p>
+                <ul style="font-family:'Jost',sans-serif;">
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--olive-light)" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>100+ edited images</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--olive-light)" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>Priority turnaround</li>
+                </ul>
+                <a class="btn-dark" href="https://app.acuityscheduling.com/schedule.php?owner=39412170" target="_blank">Book This Package</a>
+              </div>
+            </div>
+          </div>
+
+          <section style="background:var(--parchment);padding:100px 0;">
+            <div class="section-head center reveal" style="margin-bottom:64px;">
+              <h2>Good to <em>Know</em></h2>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;">
+              <div class="reveal" style="padding-bottom:32px;border-bottom:1px solid var(--olive-mist);">
+                <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--olive-deep);margin-bottom:12px;">Booking</h3>
+                <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:0.84rem;line-height:1.8;color:var(--stone);">A 50% deposit is required to hold your date. Balance due on session day. DM or email to check availability.</p>
+              </div>
+              <div class="reveal" style="padding-bottom:32px;border-bottom:1px solid var(--olive-mist);">
+                <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--olive-deep);margin-bottom:12px;">Delivery</h3>
+                <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:0.84rem;line-height:1.8;color:var(--stone);">Edited images delivered via online gallery within 1 to 2 weeks. You will receive a private link to download full resolution files.</p>
+              </div>
+              <div class="reveal" style="padding-bottom:32px;border-bottom:1px solid var(--olive-mist);">
+                <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--olive-deep);margin-bottom:12px;">Travel</h3>
+                <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:0.84rem;line-height:1.8;color:var(--stone);">Based in Yuma AZ. Travel included within 40 miles in any direction. Beyond that, contact for a custom quote.</p>
+              </div>
+              <div class="reveal" style="padding-bottom:32px;border-bottom:1px solid var(--olive-mist);">
+                <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--olive-deep);margin-bottom:12px;">Best Time to Shoot</h3>
+                <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:0.84rem;line-height:1.8;color:var(--stone);">Golden hour, which is 1 hour before sunset, is highly recommended for outdoor sessions in Yuma for best light and best results.</p>
+              </div>
+              <div class="reveal" style="padding-bottom:32px;border-bottom:1px solid var(--olive-mist);">
+                <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--olive-deep);margin-bottom:12px;">Prices Will Increase</h3>
+                <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:0.84rem;line-height:1.8;color:var(--stone);">These are introductory rates. Prices will increase as my portfolio and experience grow. Book now to lock in current pricing.</p>
+              </div>
+              <div class="reveal" style="padding-bottom:32px;border-bottom:1px solid var(--olive-mist);">
+                <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--olive-deep);margin-bottom:12px;">Custom Packages</h3>
+                <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:0.84rem;line-height:1.8;color:var(--stone);">Need something not listed? Just ask. I am flexible and happy to build a custom session around your needs and budget.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <img src="logo.png" alt="Via Federico's Photography" style="height:60px;width:auto;margin-bottom:20px;filter:brightness(0) invert(1) opacity(0.85);" />
+          <p>Capturing authentic moments in Yuma, Arizona and beyond.</p>
+        </div>
+        <div>
+          <p class="footer-title">Navigation</p>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-title">Get in Touch</p>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <p>Yuma, Arizona</p>
+            <a href="mailto:viafedericophoto@email.com">viafedericophoto@email.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; 2026 Via Federico's Photography. All rights reserved.</p>
+        <p>Yuma, Arizona</p>
+      </div>
+    </footer>
+
+    <script src="site.js" defer></script>
+  </body>
+</html>

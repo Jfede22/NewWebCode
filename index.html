@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Via Federico's Photography | Yuma, Arizona</title>
+    <meta
+      name="description"
+      content="Via Federico's Photography - capturing authentic moments in Yuma, Arizona. Portraits, weddings, events, and commercial photography."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="site.css" />
+  </head>
+  <body>
+    <header class="nav-header" id="siteHeader">
+      <div class="nav-inner container">
+        <a href="index.html" style="display:flex;align-items:center;gap:12px;text-decoration:none;">
+          <img id="logoImage" src="logo.png" alt="Via Federico's Photography" style="height:52px;width:auto;filter:brightness(0) invert(1);transition:height 0.4s ease,filter 0.4s ease;" />
+        </a>
+        <nav class="nav-links">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+          <a class="nav-link nav-book" href="booking.html">Book</a>
+          <a class="nav-link" href="pricing.html">Pricing</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+        <button class="mobile-menu-btn" id="menuToggle" aria-label="Toggle menu">
+          <span id="burgerTop"></span>
+          <span id="burgerMiddle"></span>
+          <span id="burgerBottom"></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="booking.html">Book</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="slideshow-container" id="slideshow">
+          <div class="slideshow-slide active" style="background: hsl(88, 10%, 9%);">
+            <div class="photo-placeholder"></div>
+            <div class="slide-caption">Portraits</div>
+          </div>
+          <div class="slideshow-slide" style="background: hsl(100, 13%, 11%);">
+            <div class="photo-placeholder"></div>
+            <div class="slide-caption">Weddings</div>
+          </div>
+          <div class="slideshow-slide" style="background: hsl(112, 16%, 13%);">
+            <div class="photo-placeholder"></div>
+            <div class="slide-caption">Engagements</div>
+          </div>
+          <div class="slideshow-slide" style="background: hsl(124, 19%, 15%);">
+            <div class="photo-placeholder"></div>
+            <div class="slide-caption">Events</div>
+          </div>
+          <div class="slideshow-slide" style="background: hsl(136, 22%, 17%);">
+            <div class="photo-placeholder"></div>
+            <div class="slide-caption">Families</div>
+          </div>
+          <div class="slideshow-dot-row" id="slideDots"></div>
+        </div>
+        <div class="hero-backdrop"></div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="hero-subtitle">Yuma, Arizona</p>
+            <h1 class="title">Via Federico's</h1>
+            <h1 class="subtitle">Photography</h1>
+            <p class="lead">Authentic moments, elevated. From desert golden hours to intimate celebrations - every frame tells your story.</p>
+            <div class="hero-actions">
+              <a class="btn-primary" href="portfolio.html">View Portfolio</a>
+              <a class="btn-dark" href="https://app.acuityscheduling.com/schedule.php?owner=39412170" target="_blank">Book a Session</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="logo.png" alt="Via Federico's Photography logo" />
+          </div>
+        </div>
+        <div class="hero-scroll-hint">
+          <span>Scroll</span>
+          <div class="hero-scroll-line"></div>
+        </div>
+      </section>
+
+      <section class="marquee-strip">
+        <span class="marquee-item">Portraits</span>
+        <span class="marquee-item"><span class="dot"></span>Weddings</span>
+        <span class="marquee-item"><span class="dot"></span>Engagements</span>
+        <span class="marquee-item"><span class="dot"></span>Events</span>
+        <span class="marquee-item"><span class="dot"></span>Commercial</span>
+        <span class="marquee-item"><span class="dot"></span>Families</span>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <div class="section-head reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:72px;">
+            <div>
+              <p>Recent Work</p>
+              <h2>Every Frame,<br /><em>A Story Told</em></h2>
+            </div>
+            <div>
+              <p class="lead" style="margin-left:auto;max-width:380px;">From intimate portraits to sweeping desert weddings - a glimpse into the moments worth remembering.</p>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:1.2fr 0.8fr 1fr;grid-template-rows:auto auto;gap:10px;">
+            <div class="portfolio-item reveal" style="grid-row:1 / 3;height:640px;"><div class="photo-placeholder" style="height:100%;"></div><div class="overlay"><span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.4rem;color:var(--cream);">Portraits</span></div></div>
+            <div class="portfolio-item reveal" style="height:310px;"><div class="photo-placeholder" style="height:100%;"></div><div class="overlay"><span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.4rem;color:var(--cream);">Weddings</span></div></div>
+            <div class="portfolio-item reveal" style="height:310px;"><div class="photo-placeholder" style="height:100%;"></div><div class="overlay"><span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.4rem;color:var(--cream);">Golden Hour</span></div></div>
+            <div class="portfolio-item reveal" style="height:310px;"><div class="photo-placeholder" style="height:100%;"></div><div class="overlay"><span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.4rem;color:var(--cream);">Engagements</span></div></div>
+            <div class="portfolio-item reveal" style="height:310px;"><div class="photo-placeholder" style="height:100%;"></div><div class="overlay"><span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.4rem;color:var(--cream);">Families</span></div></div>
+          </div>
+          <div class="portfolio-footer reveal" style="text-align:center;margin-top:60px;"><a class="btn-dark" href="portfolio.html">View Full Portfolio</a></div>
+        </div>
+      </section>
+
+      <!-- The Photographer -->
+      <section class="content-section" style="background:var(--warm-white);">
+        <div class="container">
+          
+          <div class="photographer-grid reveal">
+            <div class="photographer-media">
+              <div class="photo-placeholder" style="aspect-ratio:1 / 1;max-width:720px;margin:0 auto;"></div>
+              <div class="experience-badge">
+                <div class="exp-number">Six</div>
+                <div class="exp-sub">Years of Experience</div>
+              </div>
+            </div>
+            <div class="photographer-copy">
+              <p class="photographer-label">THE PHOTOGRAPHER</p>
+              <h3 style="font-family:'Cormorant Garamond',serif;color:var(--olive-deep);margin-bottom:18px;">Raised in Yuma,<br /><em>Guided by Faith</em></h3>
+              <div class="divider"></div>
+              <p class="lead" style="color:var(--stone);max-width:760px;margin-bottom:18px;">Yuma, Arizona made me who I am, patient, comfortable in uncomfortable heat, and really good at finding beauty in the middle of nowhere. These days I shoot portraits and lifestyle work, and my whole thing is keeping it lowkey and natural. If you leave a shoot actually having fun, I've done my job.</p>
+              <p class="photographer-quote" style="font-style:italic;color:var(--stone);max-width:640px;margin-bottom:22px;">“When you choose me as your photographer, you’re getting more than just beautiful photos — you’re investing in an experience built on trust, storytelling, and real connection.”</p>
+              <a class="btn-dark btn-small" href="about.html">Meet Joe</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What's Offered -->
+      <section class="content-section" style="background:var(--parchment);padding-top:40px;padding-bottom:40px;">
+        <div class="container">
+          <div class="section-head center reveal" style="margin-bottom:40px;">
+            <p>What's Offered</p>
+            <h2>Sessions for Every Story</h2>
+          </div>
+          <div class="offer-grid">
+            <div class="offer-card reveal">
+              <p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.62rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--olive-mid);margin-bottom:14px;">Portraits & Milestones</p>
+              <h3 style="font-family:'Cormorant Garamond',serif;color:var(--olive-deep);margin-bottom:12px;">Personal sessions</h3>
+              <p style="color:var(--stone);">Portraits, couples, families, headshots, proposals, engagements, elopements, and graduations.</p>
+              <p class="offer-price">Starting at $60</p>
+              <a class="btn-dark" href="https://app.acuityscheduling.com/schedule.php?owner=39412170" target="_blank">Book Now</a>
+            </div>
+            <div class="offer-card reveal">
+              <p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.62rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--olive-mid);margin-bottom:14px;">Weddings & Events</p>
+              <h3 style="font-family:'Cormorant Garamond',serif;color:var(--olive-deep);margin-bottom:12px;">Celebrations / Weddings and Events</h3>
+              <p style="color:var(--stone);">Full wedding ceremony coverage, event photography, and cinematic videography to capture every detail.</p>
+              <p class="offer-price">Starting at $600</p>
+              <a class="btn-dark" href="https://app.acuityscheduling.com/schedule.php?owner=39412170" target="_blank">Book Now</a>
+            </div>
+            <div class="offer-card reveal">
+              <p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.62rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--olive-mid);margin-bottom:14px;">Product & Brand</p>
+              <h3 style="font-family:'Cormorant Garamond',serif;color:var(--olive-deep);margin-bottom:12px;">Commercial / Product and Brand</h3>
+              <p style="color:var(--stone);">Clean, compelling product photography that elevates your brand with studio-quality results.</p>
+              <p class="offer-price">Starting at $300</p>
+              <a class="btn-dark" href="https://app.acuityscheduling.com/schedule.php?owner=39412170" target="_blank">Book Now</a>
+            </div>
+            <div class="offer-card offer-card--videography reveal">
+              <p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.62rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--olive-mid);margin-bottom:14px;">Videography</p>
+              <h3 style="font-family:'Cormorant Garamond',serif;color:var(--olive-deep);margin-bottom:12px;">Short Reels & Highlight Films</h3>
+              <p style="color:var(--stone);">Short social reels, session videos, and cinematic highlight films to pair with your photography.</p>
+              <p class="offer-price">Starting at $75</p>
+              <a class="btn-dark" href="https://app.acuityscheduling.com/schedule.php?owner=39412170" target="_blank">Book Now</a>
+            </div>
+          </div>
+          <div style="text-align:center;margin-top:28px;" class="reveal"><a class="btn-dark" href="services.html">Explore All Services</a></div>
+        </div>
+      </section>
+
+      <!-- Client Words -->
+      <section class="content-section client-words" style="background:var(--olive-deep);color:var(--cream);">
+        <div class="container">
+          <div class="section-head center reveal" style="margin-bottom:40px;">
+            <p>Client Words</p>
+            <h2>What Clients Are Saying</h2>
+          </div>
+          <div class="client-box-grid">
+            <a class="client-box reveal" href="contact.html">
+              <span class="quote-mark">“</span>
+              <div class="stars">★★★★★ <span class="rating">0/5</span></div>
+              <h3>Your Review Could Be Here</h3>
+              <p>Be the first to share your experience - your story could be featured right here.</p>
+            </a>
+            <a class="client-box reveal" href="contact.html">
+              <span class="quote-mark">“</span>
+              <div class="stars">★★★★★ <span class="rating">0/5</span></div>
+              <h3>Share Your Experience</h3>
+              <p>Have you worked with Via Federico's Photography? Leave your thoughts and help others discover something special.</p>
+            </a>
+            <a class="client-box reveal" href="contact.html">
+              <span class="quote-mark">“</span>
+              <div class="stars">★★★★★ <span class="rating">0/5</span></div>
+              <h3>Start the Conversation</h3>
+              <p>This space is waiting for your voice. Be the first to review this photographer and start the conversation.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Let's Connect -->
+      <section class="content-section" style="background:var(--warm-white);padding-bottom:120px;">
+        <div class="container contact-grid">
+          <div class="contact-info reveal">
+            <p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.62rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--olive-mid);margin-bottom:20px;">Let's Connect</p>
+            <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3vw,3.2rem);font-weight:400;color:var(--olive-deep);line-height:1.1;margin-bottom:32px;">Get in Touch</h2>
+            <p class="lead" style="color:var(--bark);max-width:680px;margin:0 auto 36px;">Ready to book or have questions? I'd love to hear about your vision. Typical response time is within 24–48 hours.</p>
+            <div style="display:flex;flex-direction:column;gap:28px;max-width:360px;margin:40px 0 0;">
+              <div><p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.58rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-mid);margin-bottom:8px;">Location</p><p style="font-family:'Jost',sans-serif;font-weight:300;font-size:0.88rem;color:var(--bark);">Yuma, Arizona</p></div>
+              <div><p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.58rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-mid);margin-bottom:8px;">Email</p><a href="mailto:viafedericophoto@email.com" style="font-family:'Jost',sans-serif;font-weight:300;font-size:0.88rem;color:var(--bark);text-decoration:none;">viafedericophoto@email.com</a></div>
+              <div><p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.58rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-mid);margin-bottom:8px;">Response Time</p><p style="font-family:'Jost',sans-serif;font-weight:300;font-size:0.88rem;color:var(--bark);">Within 24–48 hours</p></div>
+            </div>
+          </div>
+
+          <div class="contact-form reveal">
+            <form id="contactForm" class="contact-form">
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="name">Your Name</label>
+                  <input id="name" name="name" type="text" required placeholder="Full name" />
+                </div>
+                <div class="form-field">
+                  <label for="email">Email Address</label>
+                  <input id="email" name="email" type="email" required placeholder="your@email.com" />
+                </div>
+              </div>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="phone">Phone (Optional)</label>
+                  <input id="phone" name="phone" type="tel" placeholder="(555) 000-0000" />
+                </div>
+                <div class="form-field">
+                  <label for="service">Type of Session</label>
+                  <select id="service" name="service">
+                    <option value="">Select a service...</option>
+                    <option value="portrait">Portrait Session</option>
+                    <option value="couples">Couples / Engagement</option>
+                    <option value="family">Family Session</option>
+                    <option value="wedding">Wedding / Elopement</option>
+                    <option value="event">Event Coverage</option>
+                    <option value="commercial">Commercial / Product</option>
+                    <option value="graduation">Graduation</option>
+                    <option value="headshot">Headshots</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="vision">Tell Me About Your Vision</label>
+                <textarea id="vision" name="vision" rows="5" placeholder="Share the details of your session — what you have in mind, your ideal location, date, any special moments you want captured..."></textarea>
+              </div>
+              <div class="form-actions">
+                <button class="btn-dark" type="submit" style="border:none;">Send Message</button>
+                <p>Response within 24–48 hours</p>
+              </div>
+            </form>
+            <div id="contactSuccess" class="success-message" style="display:none;">
+              <h2>Thank You</h2>
+              <p>Your message has been received. Joe will be in touch within 24–48 hours.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <img src="logo.png" alt="Via Federico's Photography" style="height:60px;width:auto;margin-bottom:20px;filter:brightness(0) invert(1) opacity(0.85);" />
+          <p>Capturing authentic moments in Yuma, Arizona and beyond.</p>
+        </div>
+        <div>
+          <p class="footer-title">Navigation</p>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="booking.html">Book</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-title">Get in Touch</p>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <p>Yuma, Arizona</p>
+            <a href="mailto:viafedericophoto@email.com">viafedericophoto@email.com</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-title">Follow</p>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <a href="https://www.instagram.com/viafedericophotos/" target="_blank" style="font-family:'Jost',sans-serif;font-weight:300;font-size:0.88rem;color:var(--olive-pale);text-decoration:none;border-bottom:1px solid var(--olive-pale);">Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=61590409161497" target="_blank" style="font-family:'Jost',sans-serif;font-weight:300;font-size:0.88rem;color:var(--olive-pale);text-decoration:none;border-bottom:1px solid var(--olive-pale);">Facebook</a>
+            <a href="https://www.tiktok.com/@viafedericophotography" target="_blank" style="font-family:'Jost',sans-serif;font-weight:300;font-size:0.88rem;color:var(--olive-pale);text-decoration:none;border-bottom:1px solid var(--olive-pale);">TikTok</a>
+            <a href="https://beaconsai.com/viafedericophotography" target="_blank" style="font-family:'Jost',sans-serif;font-weight:300;font-size:0.88rem;color:var(--olive-pale);text-decoration:none;border-bottom:1px solid var(--olive-pale);">Beacons.ai</a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; 2026 Via Federico's Photography. All rights reserved.</p>
+        <p>Yuma, Arizona</p>
+      </div>
+    </footer>
+
+    <script src="site.js" defer></script>
+  </body>
+</html>

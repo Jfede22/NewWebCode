@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio | Via Federico's Photography</title>
+    <meta
+      name="description"
+      content="Browse the portfolio categories and photography work from Via Federico's Photography."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="site.css" />
+  </head>
+  <body>
+    <header class="nav-header" id="siteHeader">
+      <div class="nav-inner container">
+        <a href="index.html" style="display:flex;align-items:center;gap:12px;text-decoration:none;">
+          <img id="logoImage" src="logo.png" alt="Via Federico's Photography" style="height:52px;width:auto;filter:brightness(0) invert(1);transition:height 0.4s ease,filter 0.4s ease;" />
+        </a>
+        <nav class="nav-links">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+          <a class="nav-link" href="pricing.html">Pricing</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+        <button class="mobile-menu-btn" id="menuToggle" aria-label="Toggle menu">
+          <span id="burgerTop"></span>
+          <span id="burgerMiddle"></span>
+          <span id="burgerBottom"></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main style="padding-top:100px;">
+      <section class="hero-compact" style="background:var(--charcoal);">
+        <div class="hero-backdrop"></div>
+        <div class="hero-grid" style="grid-template-columns:1fr;justify-items:center;">
+          <div class="hero-copy" style="text-align:center;grid-column:1;width:100%;max-width:800px;">
+            <p class="hero-subtitle">Visual Work</p>
+            <h1 class="title">Portfolio</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-compact" style="background:var(--warm-white);border-bottom:1px solid var(--olive-mist);">
+        <div class="container portfolio-filters">
+          <button class="filter-button active" data-filter="All">All</button>
+          <button class="filter-button" data-filter="Portraits">Portraits</button>
+          <button class="filter-button" data-filter="Couples">Couples</button>
+          <button class="filter-button" data-filter="Families">Families</button>
+          <button class="filter-button" data-filter="Weddings">Weddings</button>
+          <button class="filter-button" data-filter="Events">Events</button>
+          <button class="filter-button" data-filter="Commercial">Commercial</button>
+        </div>
+      </section>
+
+      <section class="content-section" style="background:var(--warm-white);padding-bottom:120px;">
+        <div class="container">
+          <div class="portfolio-grid">
+            <div class="portfolio-item reveal" data-category="Portraits" style="height:420px;"><div class="photo-placeholder" style="height:100%;"></div><div class="overlay"><div><p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-pale);margin-bottom:8px;">Portraits</p><p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;color:var(--cream);">Portrait Session</p></div></div></div>
+            <div class="portfolio-item reveal" data-category="Couples" style="height:560px;"><div class="photo-placeholder" style="height:100%;"></div><div class="overlay"><div><p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-pale);margin-bottom:8px;">Couples</p><p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;color:var(--cream);">Engagement</p></div></div></div>
+            <div class="portfolio-item reveal" data-category="Weddings" style="height:420px;"><div class="photo-placeholder" style="height:100%;"></div><div class="overlay"><div><p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-pale);margin-bottom:8px;">Weddings</p><p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;color:var(--cream);">Wedding Day</p></div></div></div>
+            <div class="portfolio-item reveal" data-category="Portraits" style="height:380px;"><div class="photo-placeholder" style="height:100%;"></div><div class="overlay"><div><p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-pale);margin-bottom:8px;">Portraits</p><p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;color:var(--cream);">Headshot</p></div></div></div>
+            <div class="portfolio-item reveal" data-category="Families" style="height:480px;"><div class="photo-placeholder" style="height:100%;"></div><div class="overlay"><div><p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-pale);margin-bottom:8px;">Families</p><p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;color:var(--cream);">Family Portrait</p></div></div></div>
+            <div class="portfolio-item reveal" data-category="Events" style="height:420px;"><div class="photo-placeholder" style="height:100%;"></div><div class="overlay"><div><p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-pale);margin-bottom:8px;">Events</p><p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;color:var(--cream);">Event Coverage</p></div></div></div>
+            <div class="portfolio-item reveal" data-category="Commercial" style="height:360px;"><div class="photo-placeholder" style="height:100%;"></div><div class="overlay"><div><p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-pale);margin-bottom:8px;">Commercial</p><p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;color:var(--cream);">Product Shot</p></div></div></div>
+            <div class="portfolio-item reveal" data-category="Couples" style="height:500px;"><div class="photo-placeholder" style="height:100%;"></div><div class="overlay"><div><p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-pale);margin-bottom:8px;">Couples</p><p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;color:var(--cream);">Proposal</p></div></div></div>
+            <div class="portfolio-item reveal" data-category="Weddings" style="height:440px;"><div class="photo-placeholder" style="height:100%;"></div><div class="overlay"><div><p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-pale);margin-bottom:8px;">Weddings</p><p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;color:var(--cream);">Ceremony</p></div></div></div>
+            <div class="portfolio-item reveal" data-category="Portraits" style="height:400px;"><div class="photo-placeholder" style="height:100%;"></div><div class="overlay"><div><p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-pale);margin-bottom:8px;">Portraits</p><p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;color:var(--cream);">Golden Hour</p></div></div></div>
+            <div class="portfolio-item reveal" data-category="Families" style="height:460px;"><div class="photo-placeholder" style="height:100%;"></div><div class="overlay"><div><p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-pale);margin-bottom:8px;">Families</p><p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;color:var(--cream);">Lifestyle</p></div></div></div>
+            <div class="portfolio-item reveal" data-category="Events" style="height:380px;"><div class="photo-placeholder" style="height:100%;"></div><div class="overlay"><div><p style="font-family:'Jost',sans-serif;font-weight:200;font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--olive-pale);margin-bottom:8px;">Events</p><p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;color:var(--cream);">Celebration</p></div></div></div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container footer-grid">
+          <div>
+            <img src="logo.png" alt="Via Federico's Photography" style="height:60px;width:auto;margin-bottom:20px;filter:brightness(0) invert(1) opacity(0.85);" />
+            <p>Capturing authentic moments in Yuma, Arizona and beyond.</p>
+          </div>
+          <div>
+            <p class="footer-title">Navigation</p>
+            <div style="display:flex;flex-direction:column;gap:12px;">
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="services.html">Services</a>
+              <a href="portfolio.html">Portfolio</a>            <a href="booking.html">Book</a>              <a href="pricing.html">Pricing</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+          <div>
+            <p class="footer-title">Get in Touch</p>
+            <div style="display:flex;flex-direction:column;gap:12px;">
+              <p>Yuma, Arizona</p>
+              <a href="mailto:viafedericophoto@email.com">viafedericophoto@email.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="container footer-bottom">
+          <p>&copy; 2026 Via Federico's Photography. All rights reserved.</p>
+          <p>Yuma, Arizona</p>
+        </div>
+      </footer>
+
+      <script src="site.js" defer></script>
+    </main>
+  </body>
+</html>
