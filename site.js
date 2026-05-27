@@ -56,20 +56,27 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   if (mobileMenu && menuToggle && burgerTop && burgerMiddle && burgerBottom) {
+    function closeMenu() {
+      mobileMenu.classList.remove('open');
+      menuToggle.classList.remove('open');
+      burgerTop.style.transform = 'rotate(0deg) translate(0, 0)';
+      burgerMiddle.style.opacity = '1';
+      burgerMiddle.style.transform = 'translateX(0)';
+      burgerBottom.style.transform = 'rotate(0deg) translate(0, 0)';
+    }
+
     menuToggle.addEventListener('click', function () {
       const open = mobileMenu.classList.toggle('open');
+      menuToggle.classList.toggle('open', open);
       burgerTop.style.transform = open ? 'rotate(45deg) translate(5px, 5px)' : 'rotate(0deg) translate(0, 0)';
       burgerMiddle.style.opacity = open ? '0' : '1';
       burgerMiddle.style.transform = open ? 'translateX(-10px)' : 'translateX(0)';
       burgerBottom.style.transform = open ? 'rotate(-45deg) translate(6px, -6px)' : 'rotate(0deg) translate(0, 0)';
     });
+
     mobileMenu.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', function (e) {
-        mobileMenu.classList.remove('open');
-        burgerTop.style.transform = 'rotate(0deg) translate(0, 0)';
-        burgerMiddle.style.opacity = '1';
-        burgerMiddle.style.transform = 'translateX(0)';
-        burgerBottom.style.transform = 'rotate(0deg) translate(0, 0)';
+        closeMenu();
         e.preventDefault();
         const href = link.getAttribute('href');
         if (href) {
@@ -79,6 +86,18 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       });
     });
+
+    document.addEventListener('click', function (e) {
+      if (mobileMenu.classList.contains('open') && !header.contains(e.target)) {
+        closeMenu();
+      }
+    });
+
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 50 && mobileMenu.classList.contains('open')) {
+        closeMenu();
+      }
+    }, { passive: true });
   }
 
   if (slides.length && slideDots) {
