@@ -727,6 +727,29 @@ button {
   justify-content: center;
 }
 
+.promise-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.promise-grid > div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.promise-grid > div > div > div:first-child {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--olive-mist);
+  line-height: 1;
+  flex-shrink: 0;
+  padding-top: 4px;
+}
+
 .offer-grid,
 .client-box-grid {
   display: grid;
@@ -1822,6 +1845,24 @@ button {
   .client-box h3,
   .client-box p {
     text-align: center;
+  }
+
+  /* Promise grid responsive */
+  .promise-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+
+  .promise-grid > div > div {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .promise-grid > div > div > div:first-child {
+    margin-bottom: 8px !important;
+    padding-top: 0 !important;
+    flex-shrink: 0 !important;
   }
 }
 
