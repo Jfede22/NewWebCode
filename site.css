@@ -2246,3 +2246,37 @@ button {
     overflow-x: hidden;
   }
 }
+
+/* ── Google Form Embed ── */
+.google-form-wrapper {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 48px;
+  overflow-x: hidden;
+}
+
+.google-form-iframe {
+  width: 100%;
+  max-width: 100%;
+  height: 2436px;
+  overflow-x: hidden;
+  display: block;
+  border: none;
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .google-form-wrapper {
+    padding: 0 24px;
+  }
+  .google-form-iframe {
+    height: 2600px;
+  }
+}
+
+@media (max-width: 480px) {
+  .google-form-iframe {
+    height: 2800px;
+  }
+}

@@ -13,8 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const portfolioItems = Array.from(document.querySelectorAll('.portfolio-item'));
   const tabButtons = Array.from(document.querySelectorAll('[data-tab]'));
   const pricingPanels = Array.from(document.querySelectorAll('.pricing-panel'));
-  const contactForm = document.getElementById('contactForm');
-  const contactSuccess = document.getElementById('contactSuccess');
+
 
   function updateHeader() {
     const scrolled = window.scrollY > 60;
@@ -154,15 +153,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  if (contactForm) {
-    contactForm.addEventListener('submit', function (event) {
-      event.preventDefault();
-      contactForm.style.display = 'none';
-      if (contactSuccess) {
-        contactSuccess.style.display = 'block';
-      }
-    });
-  }
+
 
   revealOnScroll();
   setActiveNavLink();
